@@ -63,7 +63,8 @@ body {
 
 .list_web {
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    text-align: right;
 }
 
 .list_web a {
@@ -174,7 +175,7 @@ body {
     font-size: 40px;
 }
 
-p {
+.a p {
     margin-top: 20px;
     font-size: 20px;
 }
@@ -239,7 +240,7 @@ p {
     width: 100%;
     padding: 0;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .u {
@@ -282,7 +283,7 @@ p {
     color: #F7F7F7;
     width: 90%;
     margin: auto;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .titleOfB h2 {
@@ -294,8 +295,8 @@ p {
 }
 
 .b {
-    padding-bottom: 800px;
-    max-width: 600px;
+    padding-bottom: 100px;
+    max-width: 400px;
     margin: auto;
 }
 
@@ -360,7 +361,7 @@ p {
     margin-right: 5px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
     .list_mobile {
         display: block !important;
     }
@@ -379,6 +380,10 @@ p {
 
     .hussein_logo h1 {
         font-size: 22px;
+    }
+
+    .hussein_logo {
+        width: 280px;
     }
 
     .main_show {
