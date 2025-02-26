@@ -88,19 +88,32 @@ body {
 }
 .mobile_list {
     position: fixed;
-    background-color: #cccccc;
+    background-color: #867d62c3;
     height: 100%;
     top: 0;
     right: 0;
     width: 80%;
     max-width: 600px;
     padding: 20px;
+    
+  backdrop-filter: blur(10px); /* Apply blur effect */
 }
 .list_c {
     margin-top: 130px;
 }
-.list_c a {
-
+.list_c div {
+    background-color: #d5bf3d;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 500px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+.designer_a {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
 }
 @media only screen and (max-width: 900px) {
     .list_mobile {
