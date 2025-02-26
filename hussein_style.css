@@ -13,7 +13,7 @@ body {
 .main_show {
     background-image: url("/hussein/1.jpg");
     background-color: #cccccc;
-    height: 500px;
+    height: 700px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,20 +72,25 @@ body {
     border-radius: 3px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
 .list_mobile.active {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .list_mobile.active div:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
+
 .list_mobile.active div:nth-child(2) {
     opacity: 0;
 }
+
 .list_mobile.active div:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
+
 .mobile_list {
     position: fixed;
     background-color: #867d62c3;
@@ -95,12 +100,16 @@ body {
     width: 80%;
     max-width: 600px;
     padding: 20px;
-    
-  backdrop-filter: blur(10px); /* Apply blur effect */
+
+    backdrop-filter: blur(10px);
+    /* Apply blur effect */
+    z-index: 100;
 }
+
 .list_c {
     margin-top: 130px;
 }
+
 .list_c div {
     background-color: #d5bf3d;
     padding: 14px;
@@ -109,17 +118,135 @@ body {
     margin-bottom: 5px;
     border-radius: 4px;
 }
+
 .designer_a {
     margin-top: 20px;
     padding: 20px;
     text-align: center;
     font-size: 16px;
 }
+
+.ab {
+    display: flex;
+}
+
+.a {
+    padding: 20px;
+    color: #ffffff;
+}
+
+.a h2 {
+    font-size: 30px;
+}
+
+.a h2 mark {
+    background: none;
+    color: #fff023;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.my_ass {
+    width: 400px;
+    background-color: #d2c619;
+    padding: 13px;
+    font-size: 18px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 0;
+    border-left: 4px solid #c0b51c;
+    border-bottom: 4px solid #c0b51c;
+    cursor: pointer;
+}
+
+.my_ass:hover {
+    background-color: #ebde25;
+}
+
+.my_ass img {
+    margin-right: 10px;
+    width: 17px;
+    filter: brightness(0) invert(1);
+}
+
+.message_card {
+    background-color: #f7f7f779;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.top_tap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_picture {
+    width: 200px;
+    border-radius: 500px;
+    overflow: hidden;
+    border: 4px solid #efd646;
+    margin-right: 20px;
+}
+
+.profile_picture img {
+    width: 100%;
+}
+
+.message {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.u {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+.p {
+    font-size: 16px;
+    padding: 0;
+    margin: 20px 0 10px 0;
+}
+.m {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+.titleOfB {
+    text-align: left;
+    color: #F7F7F7;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.titleOfB h2 {
+    font-size: 22px;
+}
+.titleOfB p {
+    font-size: 18px;
+}
+.b {
+    padding-bottom: 800px;
+}
 @media only screen and (max-width: 900px) {
     .list_mobile {
         display: block !important;
     }
+
     .list_web {
         display: none !important;
+    }
+    .ab {
+        display: block;
     }
 }
