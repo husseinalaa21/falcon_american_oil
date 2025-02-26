@@ -29,7 +29,15 @@ body {
     margin-bottom: 20px;
 }
 
-.header_h h1 {
+.hussein_logo {
+    display: flex;
+    justify-content: center;
+}
+.hussein_logo img {
+    width: 26px !important;
+    margin-right: 20px;
+}
+.hussein_logo h1 {
     font-family: "Uncial Antiqua", serif;
     font-weight: 600;
     font-style: normal;
@@ -269,6 +277,27 @@ p {
     margin: auto;
 }
 
+.middle_show {
+    padding: 20px;
+}
+
+.end {
+    padding: 20px;
+    background-color: #d2c619;
+}
+
+.logoLast {
+    padding: 20px;
+    text-align: center;
+}
+.logoLast h2 {
+    font-family: "Uncial Antiqua", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #F7F7F7;
+
+    font-size: 26px;
+}
 @media only screen and (max-width: 900px) {
     .list_mobile {
         display: block !important;
