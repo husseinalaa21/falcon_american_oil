@@ -294,7 +294,7 @@ body {
     text-align: center;
 }
 
-.titleOfB h2 mark{
+.titleOfB h2 mark {
     background: none;
     color: #fff023;
 
@@ -375,6 +375,44 @@ body {
     margin-right: 5px;
 }
 
+.middle_show {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* Two equal columns */
+}
+
+.ma {
+    margin: 20px;
+    padding: 10px;
+}
+
+.mb {
+    margin: 20px;
+    padding: 10px;
+}
+
+.info h2 {
+    color: #3a3a3a;
+    font-size: 26px;
+}
+
+.info p {
+    color: #3a3a3a;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.pics {
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pics img {
+    width: 100%;
+}
+
 @media only screen and (max-width: 800px) {
     .list_mobile {
         display: block !important;
@@ -402,6 +440,9 @@ body {
 
     .main_show {
         max-height: 1000px;
+    }
+    .middle_show {
+        display: block;
     }
 
 }
