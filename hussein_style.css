@@ -9,9 +9,8 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-
 .main_show {
-    background-image: url("./hussein/4.jpg");
+    background-image: url("./hussein/1.jpg"); /* Starts with first image */
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,8 +18,30 @@ body {
     position: relative;
     max-height: 700px;
     padding: 20px;
-    /* Optional: Add padding to give spacing between the content and edges */
+    overflow: hidden; /* Ensures no overflow issues */
+    transition: background-image 1s ease-in-out; /* Smooth transition for background change */
 }
+
+/* Overlay for the sliding effect */
+.main_show::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; /* Start off-screen (left side) */
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 1s ease-in-out;
+    z-index: -1; /* Place behind content */
+}
+
+/* When the slide class is added, move ::before into view */
+.main_show.slide::before {
+    transform: translateX(100%); /* Move to the right to show the new background */
+}
+
 
 .header_h {
     margin-bottom: 20px;

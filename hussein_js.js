@@ -23,3 +23,36 @@ window.addEventListener("scroll", function () {
         hussein_head.style.backgroundColor = "transparent"; // Default color
     }
 });
+
+const images = [
+    "./hussein/1.jpg",
+    "./hussein/2.jpg",
+    "./hussein/3.jpg",
+    "./hussein/4.jpg"
+];
+
+let index = 1; // Start from second image since first is already in CSS
+const mainShow = document.querySelector(".main_show");
+
+function changeBackground() {
+    // Create the slide-in effect
+    mainShow.classList.add("slide");
+
+    // Set the new background in ::before
+    mainShow.style.setProperty("--next-bg", `url('${images[index]}')`);
+    mainShow.style.setProperty("--current-bg", mainShow.style.backgroundImage);
+
+    // Add the background to the pseudo-element
+    mainShow.style.setProperty("--next-bg", `url('${images[index]}')`);
+    mainShow.style.backgroundImage = `var(--current-bg)`;
+
+    // Wait for the animation to complete, then update the real background
+    setTimeout(() => {
+        mainShow.style.backgroundImage = `url('${images[index]}')`;
+        mainShow.classList.remove("slide"); // Reset slide effect
+        index = (index + 1) % images.length; // Move to next image
+    }, 1000); // Matches CSS transition duration
+}
+
+// Change background every 5 seconds
+setInterval(changeBackground, 5000);
