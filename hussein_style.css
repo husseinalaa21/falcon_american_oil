@@ -212,11 +212,12 @@ body {
 }
 
 .message_card {
-    background-color: #f7f7f779;
-    backdrop-filter: blur(10px);
+    background-color: #f7f7f7;
     padding: 20px;
     margin: auto;
-    border-radius: 20px;
+    border-radius: 10px;
+    border: 0;
+    border-right: 4px solid #ebeef2;
 }
 
 .top_tap {
@@ -264,13 +265,11 @@ body {
     font-size: 16px;
     padding: 0;
     margin: 0;
-    width: 90%;
     margin: auto;
     margin-top: 26px;
 }
 
 .m_send {
-    width: 90%;
     padding: 10px;
     font-size: 16px;
     font-weight: bold;
