@@ -23,11 +23,20 @@ body {
 }
 
 .header_h {
-    padding: 30px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+}
+.hh {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    padding: 30px;
 }
 
 .hussein_logo {
@@ -107,7 +116,6 @@ body {
 
 .mobile_list {
     position: fixed;
-    background-color: #867d62c3;
     height: 100%;
     top: 0;
     right: 0;
@@ -115,6 +123,7 @@ body {
     max-width: 600px;
     padding: 20px;
 
+    background-color: #867d62c3;
     backdrop-filter: blur(10px);
     /* Apply blur effect */
     z-index: 100;
@@ -125,12 +134,12 @@ body {
 }
 
 .list_c div {
-    background-color: #d5bf3d;
+    background-color: #f6d82d;
     padding: 14px;
     font-size: 18px;
     font-weight: 500px;
-    margin-bottom: 5px;
-    border-radius: 4px;
+    margin-bottom: 3px;
+    cursor: pointer;
 }
 
 .designer_a {
@@ -142,6 +151,7 @@ body {
 
 .ab {
     display: flex;
+    margin-top: 150px;
 }
 
 .a {
@@ -361,7 +371,7 @@ p {
         max-width: 100% !important;
     }
     .hussein_logo {
-        width: 330px;
+        width: 280px;
     }
 
     .main_show {
