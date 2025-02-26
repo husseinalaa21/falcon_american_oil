@@ -11,13 +11,14 @@ body {
 }
 
 .main_show {
-    background-image: url("/hussein/1.jpg");
+    background-image: url("./hussein/4.jpg");
     background-color: #cccccc;
-    height: 700px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    max-height: 800px;
+    padding: 20px; /* Optional: Add padding to give spacing between the content and edges */
 }
 
 .header_h {
@@ -25,7 +26,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    margin-bottom: 20px;
 }
 
 .header_h h1 {
@@ -34,7 +35,7 @@ body {
     font-style: normal;
     color: #F7F7F7;
 
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .list_web {
@@ -142,6 +143,11 @@ body {
 .a h2 mark {
     background: none;
     color: #fff023;
+
+    font-family: "Corinthia", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
 }
 
 p {
@@ -149,8 +155,9 @@ p {
     font-size: 20px;
 }
 
-.my_ass {
-    width: 400px;
+.my_eye {
+    width: 80%;
+    max-width: 400px;
     background-color: #d2c619;
     padding: 13px;
     font-size: 18px;
@@ -165,11 +172,11 @@ p {
     cursor: pointer;
 }
 
-.my_ass:hover {
+.my_eye:hover {
     background-color: #ebde25;
 }
 
-.my_ass img {
+.my_eye img {
     margin-right: 10px;
     width: 17px;
     filter: brightness(0) invert(1);
@@ -180,7 +187,7 @@ p {
     backdrop-filter: blur(10px);
     padding: 20px;
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .top_tap {
@@ -193,7 +200,7 @@ p {
     width: 200px;
     border-radius: 500px;
     overflow: hidden;
-    border: 4px solid #efd646;
+    border: 3px solid #efd646;
     margin-right: 20px;
 }
 
@@ -206,22 +213,26 @@ p {
     padding: 0;
     margin: 0;
 }
+
 .u {
     font-size: 18px;
     font-weight: 600;
     padding: 0;
     margin: 0;
 }
+
 .p {
     font-size: 16px;
     padding: 0;
     margin: 20px 0 10px 0;
 }
+
 .m {
     font-size: 16px;
     padding: 0;
     margin: 0;
 }
+
 .titleOfB {
     text-align: left;
     color: #F7F7F7;
@@ -229,15 +240,21 @@ p {
     margin: auto;
     margin-top: 20px;
 }
+
 .titleOfB h2 {
     font-size: 22px;
 }
+
 .titleOfB p {
     font-size: 18px;
 }
+
 .b {
     padding-bottom: 800px;
+    max-width: 600px;
+    margin: auto;
 }
+
 @media only screen and (max-width: 900px) {
     .list_mobile {
         display: block !important;
@@ -246,6 +263,7 @@ p {
     .list_web {
         display: none !important;
     }
+
     .ab {
         display: block;
     }
