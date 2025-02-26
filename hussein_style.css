@@ -445,6 +445,10 @@ body {
     filter: invert(100%) brightness(105%);
 }
 
+.last_show {
+    padding: 30px 26px 60px 26px;
+}
+
 @media only screen and (max-width: 900px) {
     .middle_show {
         display: block;
