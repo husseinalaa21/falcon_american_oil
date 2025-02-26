@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main_show {
+    background-image: url("/hussein/1.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header_h {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header_h h1 {
+    font-family: "Uncial Antiqua", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #F7F7F7;
+
+    font-size: 28px;
+}
+
+.list_web {
+    display: flex;
+    justify-content: center;
+}
+
+.list_web a {
+    padding: 10px 16px 10px 16px;
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #F7F7F7;
+    border-radius: 20px;
+}
+.list_web .selected{
+    background-color: #cccccc;
+}
