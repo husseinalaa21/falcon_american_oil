@@ -17,8 +17,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    max-height: 800px;
-    padding: 20px; /* Optional: Add padding to give spacing between the content and edges */
+    max-height: 700px;
+    padding: 20px;
+    /* Optional: Add padding to give spacing between the content and edges */
 }
 
 .header_h {
@@ -32,11 +33,15 @@ body {
 .hussein_logo {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
 .hussein_logo img {
     width: 26px !important;
+    height: 26px;
     margin-right: 20px;
 }
+
 .hussein_logo h1 {
     font-family: "Uncial Antiqua", serif;
     font-weight: 600;
@@ -204,11 +209,15 @@ p {
 }
 
 .profile_picture {
-    width: 180px;
+    min-width: 120px;
+    max-width: 120px;
+    min-height: 120px;
+    max-height: 120px;
     border-radius: 500px;
     overflow: hidden;
     border: 3px solid #efd646;
     margin-right: 20px;
+    align-items: center;
 }
 
 .profile_picture img {
@@ -239,7 +248,9 @@ p {
     font-size: 16px;
     padding: 0;
     margin: 0;
-    margin-top: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 26px;
 }
 
 .m_send {
@@ -283,12 +294,16 @@ p {
 
 .end {
     padding: 20px;
-    background-color: #d2c619;
+    background-color: #dfd106;
 }
 
 .logoLast {
     padding: 20px;
     text-align: center;
+}
+
+.logoLast img {
+    margin-top: 20px;
 }
 .logoLast h2 {
     font-family: "Uncial Antiqua", serif;
@@ -298,6 +313,37 @@ p {
 
     font-size: 26px;
 }
+
+.contatcInfo div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.contatcInfo div img{
+    width: 24px !important;
+    margin-right: 10px;
+}
+.developer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 60px;
+}
+.copyright {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    
+}
+.copyright img{
+    margin-right: 5px;
+}
+
 @media only screen and (max-width: 900px) {
     .list_mobile {
         display: block !important;
@@ -310,8 +356,16 @@ p {
     .ab {
         display: block;
     }
+
     .b {
         max-width: 100% !important;
     }
-    
+    .hussein_logo {
+        width: 330px;
+    }
+
+    .main_show {
+        max-height: 900px;
+    }
+
 }
