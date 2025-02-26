@@ -32,6 +32,7 @@ body {
     z-index: 1000;
 
 }
+
 .hh {
     display: flex;
     justify-content: space-between;
@@ -315,6 +316,7 @@ p {
 .logoLast img {
     margin-top: 20px;
 }
+
 .logoLast h2 {
     font-family: "Uncial Antiqua", serif;
     font-weight: 600;
@@ -333,24 +335,28 @@ p {
     margin-top: 30px;
     font-size: 20px;
 }
-.contatcInfo div img{
+
+.contatcInfo div img {
     width: 24px !important;
     margin-right: 10px;
 }
+
 .developer {
     text-align: center;
     font-size: 14px;
     margin-top: 60px;
 }
+
 .copyright {
     margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    
+
 }
-.copyright img{
+
+.copyright img {
     margin-right: 5px;
 }
 
@@ -370,8 +376,9 @@ p {
     .b {
         max-width: 100% !important;
     }
-    .hussein_logo {
-        width: 280px;
+
+    .hussein_logo h1 {
+        font-size: 22px;
     }
 
     .main_show {
