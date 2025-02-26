@@ -383,7 +383,9 @@ body {
 
 .ma {
     margin: 20px;
-    padding: 10px;
+    padding: 40px 26px 40px 26px;
+    background-color: #f5f5f5;
+    margin-bottom: 50px;
 }
 
 .mb {
@@ -398,8 +400,17 @@ body {
 
 .info p {
     color: #3a3a3a;
+    /* Dark gray for readability */
     font-size: 18px;
+    /* Good base size */
+    font-weight: 400;
+    /* Slightly thicker for better readability */
+    line-height: 1.6;
+    /* Increases spacing between lines */
+    letter-spacing: 0.5px;
+    /* Slightly improves text clarity */
     margin-top: 20px;
+    text-rendering: optimizeLegibility;
 }
 
 .pics {
@@ -411,6 +422,33 @@ body {
 
 .pics img {
     width: 100%;
+}
+
+.but_explore {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f6d82d;
+    color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+}
+
+.but_explore:hover {
+    background-color: #f5e06e;
+}
+
+.but_explore img {
+    margin-right: 10px;
+    filter: invert(100%) brightness(105%);
+}
+
+@media only screen and (max-width: 900px) {
+    .middle_show {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -440,9 +478,6 @@ body {
 
     .main_show {
         max-height: 1000px;
-    }
-    .middle_show {
-        display: block;
     }
 
 }
