@@ -237,8 +237,9 @@ body {
 
 .my_eye {
     width: 80%;
-    max-width: 400px;
-    background-color: #d2c619;
+    max-width: 500px;
+    margin: auto;
+    background-color: #f6d82d;
     padding: 13px;
     font-size: 18px;
     margin-top: 40px;
@@ -247,8 +248,8 @@ body {
     align-items: center;
     text-align: center;
     border: 0;
-    border-left: 4px solid #c0b51c;
-    border-bottom: 4px solid #c0b51c;
+    border-left: 4px solid #f8dc3e;
+    border-bottom: 4px solid #f1d84e;
     cursor: pointer;
 }
 
