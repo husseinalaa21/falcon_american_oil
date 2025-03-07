@@ -467,8 +467,40 @@ body {
 }
 
 .info h2 {
-    color: #f1ce02;
+    color: #53534a;
     font-size: 26px;
+}
+
+.guest_top {
+    padding: 40px;
+    position: relative;
+    z-index: 30;
+    margin-top: 40px;
+}
+
+.pics_g {
+    position: relative;
+    margin-top: -60px !important;
+}
+
+.guest_top h2{
+    color: #53534a;
+    font-size: 26px;
+}
+.guest_top p{
+    color: #3a3a3a;
+    /* Dark gray for readability */
+    font-size: 22px;
+    /* Good base size */
+    font-weight: 400;
+    /* Slightly thicker for better readability */
+    line-height: 1.6;
+    /* Increases spacing between lines */
+    letter-spacing: 0.5px;
+    /* Slightly improves text clarity */
+    margin-top: 20px;
+    text-rendering: optimizeLegibility;
+
 }
 
 .info p {
@@ -525,6 +557,9 @@ body {
     padding: 20px 0;
 }
 
+.pt_s {
+    margin-top: 50px !important;
+}
 .but_explore {
     width: 80%;
     max-width: 600px;
