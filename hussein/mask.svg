@@ -1,0 +1,8 @@
+<svg width="0" height="0">
+    <defs>
+        <mask id="triangle-mask">
+            <!-- Create a rounded triangle using a path -->
+            <path d="M100 0 L0 50 L100 100 Q100 80 90 50 Q100 20 100 0 Z" fill="white" />
+        </mask>
+    </defs>
+</svg>
